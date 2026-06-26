@@ -15,8 +15,8 @@ export default function Menu() {
                 </Link>
             </div>
             <div className="hidden md:flex items-center gap-8 font-medium text-slate-600 text-md">
-                <Link href="/" className="text-[#E67E22] hover:opacity-80 transition font-bold">Início</Link>
-                <a href="#" className="hover:text-[#E67E22] transition flex font-bold">Serviços<ChevronDown className="text-slate-400 font-bold w-5 " /></a>
+                <Link href="/" className="text-[#E67E22] hover:opacity-80 transition font-bold estilounicolg">Início</Link>
+                <a href="#" className="hover:text-[#E67E22] transition flex font-bold estilounicolg2">Serviços<ChevronDown className="text-slate-400 font-bold w-5 " /></a>
                 <a href="#" className="hover:text-[#E67E22] transition font-bold">Sobre Nós</a>
                 <a href="#" className="hover:text-[#E67E22] transition font-bold">Contactos</a>
             </div>

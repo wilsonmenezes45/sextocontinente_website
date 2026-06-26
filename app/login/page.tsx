@@ -3,6 +3,8 @@ import Menu from '@/app/components/menu';
 // import Rodape from '@/app/components/rodape';
 import Image from 'next/image';
 import Backgroud_ceu from '@/public/fundodoceu.svg';
+import "@/app/meus_estilos.css";
+
 export default function Login() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Login() {
         <div className="flex-6 h-200 -mt-30">
           <Image src={Backgroud_ceu} alt="" />
         </div>
-        <div className="flex-6 content-center p-5 -mt-60">
+        <div className="flex-6">
           <h1 className="text-3xl ml-15  font-semibold text-[#c87419]">Login</h1>
           <p className="text-[#c87419] ml-15  mt-1 text-sm">
             Um Sexto Continente com novos horizontes, faça parte
@@ -53,17 +55,30 @@ export default function Login() {
             {/* Divider */}
             <div className="flex items-center gap-3 mt-3">
               <div className="flex-1 h-[1px] bg-[#e1c6a4]" />
-              <span className="text-[#e1c6a4] text-xs font-medium">OU</span>
+              <span className="text-[#e1c6a4] text-xs font-medium">OU ENTRE COM SUA CONTA</span>
               <div className="flex-1 h-[1px] bg-[#e1c6a4]" />
             </div>
 
             {/* Secondary Button */}
-            <button
-              type="button"
-              className="w-full border border-[#d27b1f] text-[#d27b1f] text-sm py-2 rounded-full hover:bg-[#f5e7d4] transition"
-            >
-              Pedir novas credenciais de acesso
-            </button>
+            <div className='flex flex-row'>
+              <div className="flex-6">
+                <button
+                  type="button"
+                  className="w-full border bg-white border-[#ffffff] text-[#000000] text-sm py-2 hover:bg-[#f5e7d4] transition">
+                  <i className="fa-brands fa-google"></i> Conta Google
+                
+                </button>
+              </div>
+              <div className="flex-6">
+                <button
+                  type="button"
+                  className="w-full border bg-black border-[#000000] text-[#ffffff] text-sm py-2 hover:bg-[#f5e7d4] transition"
+                >
+                   <i className="fa-brands fa-apple"></i> Conta Apple
+                </button>
+              </div>
+
+            </div>
           </form>
         </div>
       </section>
