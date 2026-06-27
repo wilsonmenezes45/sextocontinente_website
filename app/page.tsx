@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import Menu from '@/app/components/menu';
 import Markfast from '@/app/components/markfast';
 import Seccao_1 from '@/app/components/seccao_1';

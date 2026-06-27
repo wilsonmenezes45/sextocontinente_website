@@ -1,5 +1,5 @@
 "use-client";
-import Menu from '@/app/components/menu';
+import MenuLogin from '@/app/components/menulogin';
 // import Rodape from '@/app/components/rodape';
 import Image from 'next/image';
 import Backgroud_ceu from '@/public/fundodoceu.svg';
@@ -8,18 +8,18 @@ import "@/app/meus_estilos.css";
 export default function Login() {
   return (
     <>
-      <Menu />
+      <MenuLogin />
       <section className='flex flex-row gap-2 w-full font-sans antialiased from-[#9AD1D4]/40 via-[#50AFEA]/10 pt-6 '>
         <div className="flex-6 h-200 -mt-30">
           <Image src={Backgroud_ceu} alt="" />
         </div>
-        <div className="flex-6">
+        <div className="flex-6 ">
           <h1 className="text-3xl ml-15  font-semibold text-[#c87419]">Login</h1>
           <p className="text-[#c87419] ml-15  mt-1 text-sm">
             Um Sexto Continente com novos horizontes, faça parte
           </p>
 
-          <form className="mt-8 ml-15 space-y-5 w-90">
+          <form className="flex-4 mt-8 ml-15 space-y-5">
             {/* Email */}
             <div>
               <label className="block text-[#c87419] font-medium mb-1 text-sm">
@@ -61,7 +61,7 @@ export default function Login() {
 
             {/* Secondary Button */}
             <div className='flex flex-row'>
-              <div className="flex-6">
+              <div className="flex-6 sm:flex-12">
                 <button
                   type="button"
                   className="w-full border bg-white border-[#ffffff] text-[#000000] text-sm py-2 hover:bg-[#f5e7d4] transition">
@@ -69,7 +69,7 @@ export default function Login() {
                 
                 </button>
               </div>
-              <div className="flex-6">
+              <div className="flex-6 md:flex-12">
                 <button
                   type="button"
                   className="w-full border bg-black border-[#000000] text-[#ffffff] text-sm py-2 hover:bg-[#f5e7d4] transition"
