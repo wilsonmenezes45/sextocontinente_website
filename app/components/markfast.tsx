@@ -1,5 +1,6 @@
 'use-client';
 import Image from 'next/image';
+// import imageforplane from '@/public/aviao_frente.svg';
 import imageforplane from '@/public/planeforbanner.svg';
 import { useState } from "react";
 import { 
@@ -92,12 +93,19 @@ export default function Markfast() {
         {abaAtiva === "contacto" && (
         <div className="flex flex-col md:flex-row gap-3 items-center">
             <div className="relative w-full flex-1">
-                <select className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3.5 text-sm text-slate-600 appearance-none focus:outline-none focus:ring-2 focus:ring-[#E67E22]/20">
+                <select className="w-25 bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3.5 text-sm text-slate-600 appearance-none focus:outline-none focus:ring-2 focus:ring-[#E67E22]/20">
                     <option>Selecionar tipo de serviço...</option>
                     <option>Assessoria de Passaporte</option>
                     <option>Processo de Vistos</option>
                     <option>Nacionalidade</option>
                 </select>
+                <ChevronDown className="w-4 h-4 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+            </div>
+            <div className="relative w-full flex-1">
+                <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3.5 text-sm text-slate-600 appearance-none focus:outline-none focus:ring-2 focus:ring-[#E67E22]/20" />
+            </div>
+            <div className="relative w-full flex-1">
+                <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-2xl px-4 py-3.5 text-sm text-slate-600 appearance-none focus:outline-none focus:ring-2 focus:ring-[#E67E22]/20" />
                 <ChevronDown className="w-4 h-4 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
             </div>
             <button className="w-full md:w-auto bg-[#E67E22] text-white px-8 py-3.5 rounded-2xl font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#d35400] transition whitespace-nowrap shadow-md shadow-orange-500/20">

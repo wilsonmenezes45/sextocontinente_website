@@ -1,23 +1,44 @@
-"use-client";
+"use client";
+import { useState } from "react";
 import { 
   Plane, Calendar,Globe,ArrowRight 
 } from 'lucide-react';
 
 export default function Seccao_2() {
+    const [botaoAtivo, setbotaoAtivo] = useState("agendamento");
     return(  
     <section className="py-16 bg-slate-50 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-                <div>
-                    <h2 className="text-3xl font-extrabold text-slate-800">Agendamentos</h2>
-                    <p className="text-[#E67E22] font-semibold text-lg mt-1">Para atos consulares</p>
-                    <p className="text-slate-400 text-xs font-medium uppercase mt-1 tracking-wider">Obtenha mais de nós</p>
-                </div>
+                {botaoAtivo === "agendamento" && (
+                    <div>
+                        <h2 className="text-3xl font-extrabold text-slate-800">Agendamentos</h2>
+                        <p className="text-[#E67E22] font-semibold text-lg mt-1">Para atos consulares</p>
+                        <p className="text-slate-400 text-xs font-medium uppercase mt-1 tracking-wider">Obtenha mais de nós</p>
+                    </div>
+                )}
+                {botaoAtivo === "turismo" && (
+                    <div>
+                        <h2 className="text-3xl font-extrabold text-slate-800">Turismo</h2>
+                        <p className="text-[#E67E22] font-semibold text-lg mt-1">....</p>
+                        <p className="text-slate-400 text-xs font-medium uppercase mt-1 tracking-wider">...</p>
+                    </div>
+                )}
                 <div className="flex gap-2 bg-white p-1.5 rounded-full shadow-inner border border-slate-100">
-                    <button className="bg-slate-900 text-white px-5 py-2 rounded-full text-xs font-semibold">Agendamentos</button>
-                    <button className="text-slate-600 hover:bg-slate-100 px-5 py-2 rounded-full text-xs font-semibold transition">Pacote Turístico</button>
+                    <button className={`text-slate-600 hover:bg-slate-900 px-5 py-2 rounded-full text-xs font-semibold ${
+                        botaoAtivo === "agendamento"
+                        ? "bg-slate-900 text-white shadow-lg"
+                        : "bg-transparent text-slate-600"
+                        }`} onClick={() => setbotaoAtivo("agendamento")}>Agendamentos</button>
+
+                    <button className={`text-slate-600 hover:bg-slate-900 px-5 py-2 rounded-full text-xs font-semibold ${
+                        botaoAtivo === "turismo"
+                        ? "bg-slate-900 text-white shadow-lg"
+                        : "bg-transparent text-slate-600"
+                        }`} onClick={() => setbotaoAtivo("turismo")}>Pacote Turístico</button>
                 </div>
             </div>
+            {botaoAtivo === "agendamento" && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-[2.5rem] p-8 md:p-10 flex flex-col justify-between shadow-xl relative overflow-hidden min-h-[320px] group">
                     <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-10 flex items-center justify-center transform group-hover:scale-110 transition-transform">
@@ -57,6 +78,13 @@ export default function Seccao_2() {
                 </div>
 
             </div>
+            )}
+            {botaoAtivo === "turismo" && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                TURISMO 
+
+            </div>
+            )}
             <div className="flex justify-center items-center gap-2 my-12 text-slate-300">
                 <div className="h-[1px] w-24 bg-slate-200"></div>
                 <Plane className="w-4 h-4 transform rotate-90 text-slate-400" />
