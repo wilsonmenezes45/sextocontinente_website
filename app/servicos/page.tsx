@@ -12,17 +12,20 @@ export default function Servicos() {
           <Menu/>
           {/* Hero Content */}
           <div className="text-left mt-46 max-w-5xl mx-auto relative z-10">
-            <h1 className="text-2xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">
+            <h1 className="text-2xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
               Nossos serviços
             </h1>
-            <p className="text-xl md:text-2xl font-light text-slate-600 mt-4">
+            <p className="text-xl md:text-2xl font-light text-white mt-4">
               Trate tudo connosco
             </p>
           </div>
           </div>
       </header>
+    <div className="h-200">
+        <h1>Teste</h1>
     </div>
-    <Rodape />
+    </div>
+    {/* <Rodape /> */}
     </>
 
     ); 

@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import MenuLogin from '@/app/components/menulogin';
 // import Rodape from '@/app/components/rodape';
 import Image from 'next/image';
@@ -9,17 +9,24 @@ export default function Login() {
   return (
     <>
       <MenuLogin />
-      <section className='flex flex-row gap-2 w-full font-sans antialiased from-[#9AD1D4]/40 via-[#50AFEA]/10 pt-6 '>
-        <div className="flex-6 h-200 -mt-30">
-          <Image src={Backgroud_ceu} alt="" />
+      <div className="min-h-screen flex flex-col lg:flex-row alturadoconteudo">
+        {/* Esquerda */}
+        <div className="order-2 lg:order-1 w-full lg:w-1/2">
+          {/* Imagem */}
+          <Image src={Backgroud_ceu} alt="" className='object-cover -mt-26' />
         </div>
+
+        {/* Direita */}
+        <div className="order-1 lg:order-2 mt-10 w-full lg:w-1/2 flex items-center justify-center conteudoadireita">
+          <div className="w-full max-w-xl px-8">
+            {/* Formulário */}
         <div className="flex-6 ">
-          <h1 className="text-3xl ml-15  font-semibold text-[#c87419]">Login</h1>
-          <p className="text-[#c87419] ml-15  mt-1 text-sm">
+          <h1 className="text-3xl font-semibold text-[#c87419]">Login</h1>
+          <p className="text-[#c87419] mt-1 text-sm">
             Um Sexto Continente com novos horizontes, faça parte
           </p>
 
-          <form className="flex-4 mt-8 ml-15 space-y-5">
+          <form className="flex-4 mt-8 space-y-5">
             {/* Email */}
             <div>
               <label className="block text-[#c87419] font-medium mb-1 text-sm">
@@ -66,7 +73,7 @@ export default function Login() {
                   type="button"
                   className="w-full border bg-white border-[#ffffff] text-[#000000] text-sm py-2 hover:bg-[#f5e7d4] transition">
                   <i className="fa-brands fa-google"></i> Conta Google
-                
+
                 </button>
               </div>
               <div className="flex-6 md:flex-12">
@@ -74,14 +81,16 @@ export default function Login() {
                   type="button"
                   className="w-full border bg-black border-[#000000] text-[#ffffff] text-sm py-2 hover:bg-[#f5e7d4] transition"
                 >
-                   <i className="fa-brands fa-apple"></i> Conta Apple
+                  <i className="fa-brands fa-apple"></i> Conta Apple
                 </button>
               </div>
 
             </div>
           </form>
         </div>
-      </section>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
