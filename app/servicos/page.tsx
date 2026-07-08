@@ -33,11 +33,20 @@ export default function Servicos() {
                 </div>
               </div>
               <div className="flex flex-row text-xl md:text-xl font-light mt-2 text-[#4B4100]">
-                <div className="bg-white rounded-full flex flex-row p-2">
+                <div className="bg-white rounded-full flex flex-row p-1">
+                  <CalendarDays />
+                  <p>Albummmm</p>
+                </div>
+                <div className="bg-white rounded-full flex flex-row p-1 ml-4">
+                  <CalendarDays />
+                  <p>Albummmm</p>
+                </div>
+                <div className="bg-white rounded-full flex flex-row p-1 ml-4">
                   <CalendarDays />
                   <p>Albummmm</p>
                 </div>
               </div>
+              
             </div>
           </div>
         </header>
