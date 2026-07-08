@@ -1,3 +1,8 @@
 .alturadoconteudo, .object-cover, .conteudoadireita {
     height: 100% !important;
 }
+.backgroudServicos {
+    background-image: url(../public/backgroundServicos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
