@@ -21,7 +21,6 @@ export default function MenuLogin() {
                 <a href="#" className="hover:text-[#E67E22] transition font-bold">Sobre Nós</a>
                 <a href="#" className="hover:text-[#E67E22] transition font-bold">Contactos</a>
             </div>
-
             <div className="flex items-center gap-3">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div className="flex gap-2 bg-white p-1 rounded-full shadow-inner border border-slate-100">

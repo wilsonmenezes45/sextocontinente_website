@@ -16,19 +16,20 @@ export default function Login() {
   }, []);
   return (
     <>
-      <MenuLogin />
       <div className="min-h-screen flex flex-col lg:flex-row alturadoconteudo">
         {/* Esquerda */}
         <div className="order-2 lg:order-1 w-full lg:w-1/2 md:none">
           {/* Imagem */}
-          <Image src={Backgroud_ceu} alt="" className='object-cover -mt-26' />
+          <Image src={Backgroud_ceu} alt="" className='object-cover' />
         </div>
 
         {/* Direita */}
         <div className="order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center -mt-40 py-5 lg:py-0">
 
           <div className="w-full max-w-md px-6">
+            <div className="">
 
+            </div>
             {/* Título */}
             <div className="text-left">
               <h1 className="text-4xl font-bold text-[#c87419]">

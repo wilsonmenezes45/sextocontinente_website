@@ -9,13 +9,14 @@ import Rodape from '@/app/components/rodape';
 
 export default function SextoContinenteHome() {
   return (
+    <>
+    <Menu/>
     <div className="min-h-screen bg-[#F4F9F9] text-slate-800 font-sans antialiased overflow-x-hidden">
       
       {/* 1. HERO SECTION & NAVBAR */}
       <header className="relative bg-gradient-to-b from-[#9AD1D4]/40 via-[#50AFEA]/10 to-transparent pt-6 pb-20 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Menu */}
-          <Menu/>
           {/* Hero Content */}
           <div className="text-center mt-16 max-w-3xl mx-auto relative z-10">
             <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">
@@ -32,6 +33,8 @@ export default function SextoContinenteHome() {
       <Seccao_1/>
       {/* 3. SECTION: AGENDAMENTOS */}
       <Seccao_2 />
+      {/* 3. SECTION: AGENDAMENTOS */}
+      <Seccao_2 />
       {/* 4. SECTION: APLICATIVO */}
       <Seccao_3 />
 
@@ -40,6 +43,7 @@ export default function SextoContinenteHome() {
       {/* 7. FOOTER */}
       <Rodape/>
     </div>
+    </>
   );
 }
 

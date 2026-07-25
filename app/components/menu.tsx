@@ -7,7 +7,7 @@ import Link from 'next/link';
  } from 'lucide-react';
 export default function Menu() {
     return (
-        <nav className="flex items-center justify-between bg-transparent backdrop-blur-none z-20 py-3 px-6">
+        <nav className="flex items-center px-10 fixed py-4 justify-between bg-white backdrop-blur z-20 w-[100%]">
             <div className="flex items-center gap-2">
                 {/* Logo Placeholder */}
                 <Link href="/" className="flex items-center relative font-bold text-xl text-[#1E3A8A]">
