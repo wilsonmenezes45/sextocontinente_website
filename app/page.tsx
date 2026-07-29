@@ -11,10 +11,9 @@ export default function SextoContinenteHome() {
   return (
     <>
     <Menu/>
-    <div className="min-h-screen bg-[#F4F9F9] text-slate-800 font-sans antialiased overflow-x-hidden">
-      
+    <div className="min-h-screen bg-[#F4F9F9] text-slate-800 font-sans antialiased overflow-x-hidden">      
       {/* 1. HERO SECTION & NAVBAR */}
-      <header className="relative bg-gradient-to-b from-[#9AD1D4]/40 via-[#50AFEA]/10 to-transparent pt-6 pb-20 px-4 md:px-12">
+      <header className="relative bg-gradient-to-b mt-20 from-[#9AD1D4]/40 via-[#50AFEA]/10 to-transparent pt-6 pb-20 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Menu */}
           {/* Hero Content */}

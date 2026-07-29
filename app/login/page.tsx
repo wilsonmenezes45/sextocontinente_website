@@ -25,10 +25,12 @@ export default function Login() {
 
         {/* Direita */}
         <div className="order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center -mt-40 py-5 lg:py-0">
-
           <div className="w-full max-w-md px-6">
-            <div className="">
-
+            <div className="flex ">
+              <li>Inicio</li>
+              <li>Sobre Nos</li>
+              <li>Serviços</li>
+              <li>Contactos</li>
             </div>
             {/* Título */}
             <div className="text-left">
