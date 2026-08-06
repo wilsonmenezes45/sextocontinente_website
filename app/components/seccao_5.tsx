@@ -4,17 +4,17 @@ import {
   Plane, Calendar,Globe,ArrowRight 
 } from 'lucide-react';
 
-export default function Seccao_2() {
+export default function Seccao_5() {
     const [botaoAtivo, setbotaoAtivo] = useState("agendamento");
     return(  
     <section className="py-16 bg-slate-50 px-4 md:px-12">
         <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-5 gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
                 {botaoAtivo === "agendamento" && (
                     <div>
-                        <h2 className="text-3xl font-extrabold text-slate-800">Agendamentos</h2>
-                        <p className="text-[#E67E22] font-semibold text-lg mt-1">Para atos consulares</p>
-                        <p className="text-slate-400 text-xs font-medium uppercase mt-1 tracking-wider">Obtenha mais de nós</p>
+                        <h2 className="text-3xl font-extrabold text-slate-800">Nossos Eventos</h2>
+                        <p className="text-[#E67E22] font-semibold text-lg mt-1">Faça parte dos eventos de Angola</p>
+                        <p className="text-slate-400 text-xs font-medium uppercase mt-1 tracking-wider">Propomos aventura e lazer nos melhores territorios do nosso país</p>
                     </div>
                 )}
                 {botaoAtivo === "turismo" && (

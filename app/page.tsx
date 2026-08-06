@@ -5,6 +5,7 @@ import Seccao_1 from '@/app/components/seccao_1';
 import Seccao_2 from '@/app/components/seccao_2';
 import Seccao_3 from '@/app/components/seccao_3';
 import Seccao_4 from '@/app/components/seccao_4';
+import Seccao_5 from '@/app/components/seccao_5';
 import Rodape from '@/app/components/rodape';
 
 export default function SextoContinenteHome() {
@@ -33,7 +34,7 @@ export default function SextoContinenteHome() {
       {/* 3. SECTION: AGENDAMENTOS */}
       <Seccao_2 />
       {/* 3. SECTION: AGENDAMENTOS */}
-      <Seccao_2 />
+      <Seccao_5 />
       {/* 4. SECTION: APLICATIVO */}
       <Seccao_3 />
 

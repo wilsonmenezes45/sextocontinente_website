@@ -1,10 +1,13 @@
 "use client";
-import MenuLogin from '@/app/components/menulogin';
+import Link from 'next/link';
 // import Rodape from '@/app/components/rodape';
 import Image from 'next/image';
 import Backgroud_ceu from '@/public/fundodoceu.svg';
 import "@/app/meus_estilos.css";
 import { useEffect } from "react";
+import {
+  ChevronDown
+} from 'lucide-react';
 export default function Login() {
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -18,22 +21,22 @@ export default function Login() {
     <>
       <div className="min-h-screen flex flex-col lg:flex-row alturadoconteudo">
         {/* Esquerda */}
-        <div className="order-2 lg:order-1 w-full lg:w-1/2 md:none">
+        <div className="order-2 lg:order-1 w-full lg:w-1/2 sm:none">
           {/* Imagem */}
           <Image src={Backgroud_ceu} alt="" className='object-cover' />
         </div>
 
         {/* Direita */}
-        <div className="order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center -mt-40 py-5 lg:py-0">
+        <div className="order-1 lg:order-2 w-full lg:w-1/2 flex items-center justify-center -mt-30 py-5 lg:py-0">
           <div className="w-full max-w-md px-6">
-            <div className="flex ">
-              <li>Inicio</li>
-              <li>Sobre Nos</li>
-              <li>Serviços</li>
-              <li>Contactos</li>
+            <div className="flex rounded-full items-center px-10 py-4 justify-between bg-white -mt-20 backdrop-blur ">
+              <Link href="/" className="text-[#E67E22] hover:opacity-80 transition font-light estilounicolg">Início</Link>
+              <Link href="/servicos" className="hover:text-[#E67E22] transition flex font-light estilounicolg2">Serviços<ChevronDown className="text-slate-400 font-light w-5 " /></Link>
+              <Link href="/sobre_nos" className="hover:text-[#E67E22] transition font-light">Sobre Nós</Link>
+              <Link href="/contactos" className="hover:text-[#E67E22] transition font-light">Contactos</Link>
             </div>
             {/* Título */}
-            <div className="text-left">
+            <div className="text-left mt-5">
               <h1 className="text-4xl font-bold text-[#c87419]">
                 Login
               </h1>
@@ -91,28 +94,15 @@ export default function Login() {
               </div>
 
               {/* Redes sociais */}
-              <div className="grid grid-cols-2 gap-4">
-
-                <button
-                  type="button"
-                  className="border rounded-md py-3 hover:bg-gray-100 transition"
-                >
-                  <i className="fa-brands fa-google mr-2"></i>
-                  Google
-                </button>
-
-                <button
-                  type="button"
-                  className="bg-black text-white rounded-md py-3 hover:bg-neutral-800 transition"
-                >
-                  <i className="fa-brands fa-apple mr-2"></i>
-                  Apple
-                </button>
-
+              <div className="grid grid-cols-full gap-4">
+                <div className="space-y-3 mb-5">
+                  <button className="w-full flex items-center justify-center gap-3 border border-slate-200 hover:bg-slate-50 transition px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-4 h-4" />
+                    Registar com o Google
+                  </button>
+                </div>
               </div>
-
             </form>
-
           </div>
 
         </div>

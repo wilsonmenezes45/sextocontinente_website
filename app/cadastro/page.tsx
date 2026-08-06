@@ -20,25 +20,6 @@ export default function Cadastro() {
             </p>
           </div>
 
-          {/* Botões de Redes Sociais */}
-          <div className="space-y-3 mb-5">
-            <button className="w-full flex items-center justify-center gap-3 border border-slate-200 hover:bg-slate-50 transition px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
-              <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-4 h-4" />
-              Registar com o Google
-            </button>
-            <button className="w-full flex items-center justify-center gap-3 border border-slate-200 hover:bg-slate-50 transition px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
-              <img src="https://www.svgrepo.com/show/513008/x.svg" alt="X" className="w-4 h-4 text-slate-900" />
-              Registar com o X
-            </button>
-          </div>
-
-          {/* Divisor "OU" */}
-          <div className="relative flex py-3 items-center mb-3">
-            <div className="flex-grow border-t border-slate-200"></div>
-            <span className="flex-shrink mx-4 text-xs font-bold uppercase tracking-widest text-slate-400">OU</span>
-            <div className="flex-grow border-t border-slate-200"></div>
-          </div>
-
           {/* Campos do Formulário */}
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div className="space-y-1.5">
@@ -77,6 +58,19 @@ export default function Cadastro() {
             </button>
           </form>
         </div>
+          {/* Divisor "OU" */}
+          <div className="relative flex py-3 items-center mb-3">
+            <div className="flex-grow border-t border-slate-200"></div>
+            <span className="flex-shrink mx-4 text-xs font-bold uppercase tracking-widest text-slate-400">OU</span>
+            <div className="flex-grow border-t border-slate-200"></div>
+          </div>
+          {/* Botões de Redes Sociais */}
+          <div className="space-y-3 mb-5">
+            <button className="w-full flex items-center justify-center gap-3 border border-slate-200 hover:bg-slate-50 transition px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-700 shadow-sm">
+              <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-4 h-4" />
+              Registar com o Google
+            </button>
+          </div>
 
         {/* Rodapé do Formulário */}
         <div className="text-center text-xs text-slate-500 mt-8 pt-4 border-t border-slate-100">
